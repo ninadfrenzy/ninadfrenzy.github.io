@@ -8,11 +8,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!DOCTYPE html>
     <script>
-      
-function scrollToElement(elementId) {
-  var elmntToView = document.getElementById(elementId);
-elmntToView.scrollIntoView({behavior:"smooth"}); 
-}
+      function scrollToElement(elementId) {
+        var elmntToView = document.getElementById(elementId);
+        elmntToView.scrollIntoView({ behavior: "smooth" });
+      }
       tailwind.config = {
         theme: {
           extend: {
@@ -43,27 +42,26 @@ elmntToView.scrollIntoView({behavior:"smooth"});
     />
     <title>Ninad Manjaramkar</title>
     <style>
-      
       /* width */
       ::-webkit-scrollbar {
         width: 5px;
       }
-      
+
       /* Track */
       ::-webkit-scrollbar-track {
-        background: #f1f1f1; 
+        background: #f1f1f1;
       }
-       
+
       /* Handle */
       ::-webkit-scrollbar-thumb {
-        background: #888; 
+        background: #888;
       }
-      
+
       /* Handle on hover */
       ::-webkit-scrollbar-thumb:hover {
-        background: #555; 
+        background: #555;
       }
-      </style>
+    </style>
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
@@ -75,36 +73,46 @@ elmntToView.scrollIntoView({behavior:"smooth"});
           style="width: 80px; height: 80px; stroke-width: 0.5"
         ></i>
         <button
-        type="button"
-        onclick="window.open('https://drive.google.com/file/d/1KefS2ud2OruDkjtGNnVRTI_MAuCX1_AX/view?usp=share_link','_blank')"
-        class="button rounded px-12 py-[0.67rem] mt-4 ml-1 mr-4 md:float-right text-sm border-b-[6px] border-l-[2px] border-[#94a3b8] bg-[#cbd5e1] rounded-[2px] relative active:border-b-[2px] active:top-1 font-medium"
-      >
-        <span
-          class="tracking-wide text-base"
-          style="font-family: 'Source Code Pro'; font-weight: 700"
-          >Resume</span
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/1KefS2ud2OruDkjtGNnVRTI_MAuCX1_AX/view?usp=share_link','_blank')"
+          class="button rounded px-12 py-[0.67rem] mt-4 ml-1 mr-4 md:float-right text-sm border-b-[6px] border-l-[2px] border-[#94a3b8] bg-[#cbd5e1] rounded-[2px] relative active:border-b-[2px] active:top-1 font-medium"
         >
-      </button>
-        <button class="button rounded float-right mx-1 px-2 py-3 mt-4 mb-4 text-sm border-b-[6px] border-l-[2px] border-[#94a3b8] bg-[#cbd5e1] rounded-[2px] relative active:border-b-[2px] active:top-1 font-medium">
-          <i
-          data-feather="mail"
-          class="mx-2"
-          style="display: inline; width: 20px; height: 20px; stroke-width: 2"
-        ></i>
+          <span
+            class="tracking-wide text-base"
+            style="font-family: 'Source Code Pro'; font-weight: 700"
+            >Resume</span
+          >
         </button>
-        <button class="button rounded float-right mx-1 px-2 py-[0.55rem] mt-4 mb-4 text-sm border-b-[6px] border-l-[2px] border-[#94a3b8] bg-[#cbd5e1] rounded-[2px] relative active:border-b-[2px] active:top-1 font-medium">
+        <a
+          href="mailto:ninadfrenzy@gmail.com"
+          class="button rounded float-right mx-1 px-2 py-3 mt-4 mb-4 text-sm border-b-[6px] border-l-[2px] border-[#94a3b8] bg-[#cbd5e1] rounded-[2px] relative active:border-b-[2px] active:top-1 font-medium"
+        >
           <i
-          class="devicon-linkedin-plain text-xl text-slate-700 mx-2 align-middle"
-        ></i>
-        </button>
-        <button class="button rounded float-right mx-1 px-2 py-3 mt-4 mb-4 text-sm border-b-[6px] border-l-[2px] border-[#94a3b8] bg-[#cbd5e1] rounded-[2px] relative active:border-b-[2px] active:top-1 font-medium">
+            data-feather="mail"
+            class="mx-2"
+            style="display: inline; width: 20px; height: 20px; stroke-width: 2"
+          ></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ninadmanjaramkar"
+          target="_blank"
+          class="button rounded float-right mx-1 px-2 py-[0.55rem] mt-4 mb-4 text-sm border-b-[6px] border-l-[2px] border-[#94a3b8] bg-[#cbd5e1] rounded-[2px] relative active:border-b-[2px] active:top-1 font-medium"
+        >
           <i
-          data-feather="instagram"
-          class="mx-2"
-          style="display: inline; width: 20px; height: 20px; stroke-width: 2"
-        ></i>
-        </button>
-
+            class="devicon-linkedin-plain text-xl text-slate-700 mx-2 align-middle"
+          ></i>
+        </a>
+        <a
+          href="https://www.instagram.com/ninadfrenzy/"
+          target="_blank"
+          class="button rounded float-right mx-1 px-2 py-3 mt-4 mb-4 text-sm border-b-[6px] border-l-[2px] border-[#94a3b8] bg-[#cbd5e1] rounded-[2px] relative active:border-b-[2px] active:top-1 font-medium"
+        >
+          <i
+            data-feather="instagram"
+            class="mx-2"
+            style="display: inline; width: 20px; height: 20px; stroke-width: 2"
+          ></i>
+        </a>
       </div>
 
       <div class="container px-4 min-h-full pt-16 text-center mx-auto">
@@ -137,44 +145,125 @@ elmntToView.scrollIntoView({behavior:"smooth"});
         </button>
       </div>
       <hr class="mt-16 w-[60%] mx-auto border-slate-600 border-2" />
+      <div class="container mx-auto px-4 text-center min-h-full pb-2">
+        <h1 class="text-xl mt-12 font-bold text-slate-500 mb-12" id="skills">
+          EXPERIENCE
+        </h1>
+        <div class="grid grid-rows-1 md:grid-rows-1 md:max-w-2xl mx-auto gap-4">
+          <div class="shadow-lg py-4 bg-slate-200 rounded my-auto">
+            <div class="grid grid-cols-4 my-2 items-center ml-2 mr-8">
+              <div class="col-span-1 text-5xl font-medium hidden md:block">S</div>
+              <div class="col-span-3">
+                <div class="info text-left">
+                  <p class="font-bold"><span class="italic text-slate-600 font-bold">Full-Stack Developer</span><span class="text-2xl italic" style="font-family: 'Source Code Pro';font-weight: 600;"> @ </span> SLB Pune IN <span class="text-slate-400 text-xs ml-2"> [2020-present]</span></p>
+                  <p><ul class="text-sm text-slate-600 list-disc ml-4 mt-2">
+                    <li class="my-2">Work on diverse projects under sales pillar, ranging from SaaS products to full stack web applications</li>
+                    <li class="my-2">Work with tools like Django, Angular, Elasticsearch as well as platforms like Dynamics 365 CRM & Model Driven Powerapps</li>
+                  </ul></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-16 w-[60%] mx-auto border-slate-600 border-2" />
+      <!-- DIV FOR SKILLS -->
       <div class="container mx-auto px-4 text-center min-h-full pb-12">
         <h1 class="text-xl mt-12 font-bold text-slate-500 mb-12" id="skills">
           SKILLS
         </h1>
         <div class="grid grid-cols-2 md:grid-cols-3 md:mx-10 gap-4">
-          <div class="shadow-lg py-4 bg-[#cbd5e1] rounded"><div><i class="devicon-angularjs-plain text-5xl text-slate-700 mx-2 align-middle"></i><span>Angular</span></div></div>
-          <div class="bg-[#cbd5e1] shadow-lg py-4 rounded"><div><i class="devicon-django-plain text-5xl text-slate-700 mx-2 align-middle"></i><span>Django</span></div></div>
-          <div class="bg-[#cbd5e1] shadow-lg py-4 rounded"><div><i class="devicon-mysql-plain text-5xl text-slate-700 mx-2 align-middle"></i><span>MySQL</span></div></div>
-          <div class="bg-[#cbd5e1] shadow-lg py-4 rounded"><div><i class="devicon-kubernetes-plain text-5xl text-slate-700 mx-2 align-middle"></i><span>Kubernetes</span></div></div>
-          <div class="bg-[#cbd5e1] shadow-lg py-4 rounded"><div><i class="devicon-docker-plain text-5xl text-slate-700 mx-2 align-middle"></i><span>Docker</span></div></div>
-          <div class="bg-[#cbd5e1] shadow-lg py-4 rounded"><div><i class="devicon-react-original text-5xl text-slate-700 mx-2 align-middle"></i><span>React</span></div></div>
+          <div class="shadow-lg py-4 bg-[#cbd5e1] rounded">
+            <div>
+              <i
+                class="devicon-angularjs-plain text-5xl text-slate-700 mx-2 align-middle"
+              ></i
+              ><span>Angular</span>
+            </div>
+          </div>
+          <div class="bg-[#cbd5e1] shadow-lg py-4 rounded">
+            <div>
+              <i
+                class="devicon-django-plain text-5xl text-slate-700 mx-2 align-middle"
+              ></i
+              ><span>Django</span>
+            </div>
+          </div>
+          <div class="bg-[#cbd5e1] shadow-lg py-4 rounded">
+            <div>
+              <i
+                class="devicon-mysql-plain text-5xl text-slate-700 mx-2 align-middle"
+              ></i
+              ><span>MySQL</span>
+            </div>
+          </div>
+          <div class="bg-[#cbd5e1] shadow-lg py-4 rounded">
+            <div>
+              <i
+                class="devicon-kubernetes-plain text-5xl text-slate-700 mx-2 align-middle"
+              ></i
+              ><span>Kubernetes</span>
+            </div>
+          </div>
+          <div class="bg-[#cbd5e1] shadow-lg py-4 rounded">
+            <div>
+              <i
+                class="devicon-docker-plain text-5xl text-slate-700 mx-2 align-middle"
+              ></i
+              ><span>Docker</span>
+            </div>
+          </div>
+          <div class="bg-[#cbd5e1] shadow-lg py-4 rounded">
+            <div>
+              <i
+                class="devicon-react-original text-5xl text-slate-700 mx-2 align-middle"
+              ></i
+              ><span>React</span>
+            </div>
+          </div>
         </div>
-
-      
       </div>
-      
+
       <hr class="mt-16 w-[60%] mx-auto border-slate-600 border-2" />
-      <div class="container mx-auto px-4 text-center min-h-full pt-4 pb-12" id="connect_div">
+      <div
+        class="container mx-auto px-4 text-center min-h-full pt-4 pb-12"
+        id="connect_div"
+      >
         <h1 class="text-xl mt-12 font-bold text-slate-500 mb-12" id="skills">
           CONNECT WITH ME
         </h1>
-        <form class="form p-4 flex flex-col justify-center mx-auto max-w-md" action="https://api.web3forms.com/submit" method="POST">
+        <form
+          class="form p-4 flex flex-col justify-center mx-auto max-w-md"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
           <div class="p-6 bg-slate-200 shadow-lg font-bold rounded">
-            <label for="message" class="block mb-2 text-md text-gray-900 dark:text-gray-400 text-left ml-1">Message</label>
-            <textarea id="message" name="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your message..."></textarea>
-            <input type="hidden" name="access_key" value="e3437cc7-210a-489c-9b52-8175606c6d2b">
+            <label
+              for="message"
+              class="block mb-2 text-md text-gray-900 dark:text-gray-400 text-left ml-1"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Your message..."
+            ></textarea>
+            <input
+              type="hidden"
+              name="access_key"
+              value="e3437cc7-210a-489c-9b52-8175606c6d2b"
+            />
             <button
-            style="font-family: 'Source Code Pro'; font-weight: 700"
-            type="submit"  
-            class="button rounded px-12 py-3 mt-4 mb-4 text-white text-sm border-b-[6px] border-l-[2px] border-[#64748b] bg-[#94a3b8] rounded-[2px] relative active:border-b-[2px] active:top-1 font-medium"
-          >
-            Hire Me
-          </button>
-          
+              style="font-family: 'Source Code Pro'; font-weight: 700"
+              type="submit"
+              class="button rounded px-12 py-3 mt-4 mb-4 text-white text-sm border-b-[6px] border-l-[2px] border-[#64748b] bg-[#94a3b8] rounded-[2px] relative active:border-b-[2px] active:top-1 font-medium"
+            >
+              Hire Me
+            </button>
           </div>
-
         </form>
-        
       </div>
     </div>
     <script>
