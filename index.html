@@ -61,6 +61,22 @@
       ::-webkit-scrollbar-thumb:hover {
         background: #555;
       }
+
+      @-webkit-keyframes downarrow {
+        0% {
+          -webkit-transform: translateY(0);
+          opacity: 0.4;
+        }
+        100% {
+          -webkit-transform: translateY(0.4em);
+          opacity: 0.9;
+        }
+      }
+
+      .down {
+        -webkit-animation: downarrow 0.6s infinite alternate ease-in-out;
+        
+      }
     </style>
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
@@ -83,25 +99,10 @@
             >Resume</span
           >
         </button>
-        <a
-          href="mailto:ninadfrenzy@gmail.com"
-          class="button rounded float-right mx-1 px-2 py-3 mt-4 mb-4 text-sm border-b-[6px] border-l-[2px] border-[#94a3b8] bg-[#cbd5e1] rounded-[2px] relative active:border-b-[2px] active:top-1 font-medium"
-        >
-          <i
-            data-feather="mail"
-            class="mx-2"
-            style="display: inline; width: 20px; height: 20px; stroke-width: 2"
-          ></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/ninadmanjaramkar"
-          target="_blank"
-          class="button rounded float-right mx-1 px-2 py-[0.55rem] mt-4 mb-4 text-sm border-b-[6px] border-l-[2px] border-[#94a3b8] bg-[#cbd5e1] rounded-[2px] relative active:border-b-[2px] active:top-1 font-medium"
-        >
-          <i
-            class="devicon-linkedin-plain text-xl text-slate-700 mx-2 align-middle"
-          ></i>
-        </a>
+
+
+        
+
         <a
           href="https://www.instagram.com/ninadfrenzy/"
           target="_blank"
@@ -113,9 +114,29 @@
             style="display: inline; width: 20px; height: 20px; stroke-width: 2"
           ></i>
         </a>
+        <a
+        href="mailto:ninadfrenzy@gmail.com"
+        class="button rounded float-right mx-1 px-2 py-3 mt-4 mb-4 text-sm border-b-[6px] border-l-[2px] border-[#94a3b8] bg-[#cbd5e1] rounded-[2px] relative active:border-b-[2px] active:top-1 font-medium"
+      >
+        <i
+          data-feather="mail"
+          class="mx-2"
+          style="display: inline; width: 20px; height: 20px; stroke-width: 2"
+        ></i>
+      </a>
+        <a
+        href="https://www.linkedin.com/in/ninadmanjaramkar"
+        class="button rounded float-right mx-1 px-2 py-3 mt-4 mb-4 text-sm border-b-[6px] border-l-[2px] border-[#94a3b8] bg-[#cbd5e1] rounded-[2px] relative active:border-b-[2px] active:top-1 font-medium"
+      >
+        <i
+          data-feather="linkedin"
+          class="mx-2"
+          style="display: inline; width: 20px; height: 20px; stroke-width: 2"
+        ></i>
+      </a>
       </div>
 
-      <div class="container px-4 min-h-full pt-16 text-center mx-auto">
+      <div class="container px-4 min-h-screen pt-16 text-center mx-auto">
         <img
           src="./profile_alt.jpeg"
           alt=""
@@ -143,23 +164,71 @@
         >
           Hire Me
         </button>
+        <div>
+          <button
+            style="font-family: 'Source Code Pro'; font-weight: 700"
+            type="button"
+            onclick="scrollToElement('experience')"
+            class="button rounded px-12 py-3 mt-4 mb-4 text-xl rounded-[2px] relative down hidden md:inline"
+          >
+            <i
+              data-feather="chevrons-down"
+              class="mx-2"
+              style="
+                display: inline;
+                width: 40px;
+                height: 40px;
+                stroke-width: 1;
+              "
+            ></i>
+          </button>
+        </div>
       </div>
-      <hr class="mt-16 w-[60%] mx-auto border-slate-600 border-2" />
+      <hr class="mt-2 w-[60%] mx-auto border-slate-600 border-2" id="experience" />
       <div class="container mx-auto px-4 text-center min-h-full pb-2">
-        <h1 class="text-xl mt-12 font-bold text-slate-500 mb-12" id="skills">
+        <h1 class="text-xl mt-12 font-bold text-slate-500 mb-12" >
           EXPERIENCE
         </h1>
         <div class="grid grid-rows-1 md:grid-rows-1 md:max-w-2xl mx-auto gap-4">
           <div class="shadow-lg py-4 bg-slate-200 rounded my-auto">
             <div class="grid grid-cols-4 my-2 items-center ml-2 mr-8">
-              <div class="col-span-1 text-5xl font-medium hidden md:block">S</div>
+              <div class="col-span-1 text-5xl font-medium hidden md:block">
+                S
+              </div>
               <div class="col-span-4 md:col-span-3">
                 <div class="info md:text-left">
-                  <p class="font-bold"><span class="italic text-slate-600 font-bold hidden md:inline">Full-Stack Developer</span><span class="italic text-slate-600 font-bold md:hidden">FSD</span><span class="md:text-2xl italic" style="font-family: 'Source Code Pro';font-weight: 600;"> @ </span> SLB Pune IN <span class="text-slate-400 text-xs ml-2"> [2020-present]</span></p>
-                  <p><ul class="text-sm text-slate-600 md:list-disc md:ml-4 mt-2 text-left">
-                    <li class="my-2">Work on diverse projects under sales pillar, ranging from SaaS products to full stack web applications</li>
-                    <li class="my-2">Work with tools like Django, Angular, Elasticsearch as well as platforms like Dynamics 365 CRM & Model Driven Powerapps</li>
-                  </ul></p>
+                  <p class="font-bold">
+                    <span
+                      class="italic text-slate-600 font-bold hidden md:inline"
+                      >Full-Stack Developer</span
+                    ><span class="italic text-slate-600 font-bold md:hidden"
+                      >FSD</span
+                    ><span
+                      class="md:text-2xl italic"
+                      style="font-family: 'Source Code Pro'; font-weight: 600"
+                    >
+                      @
+                    </span>
+                    SLB Pune IN
+                    <span class="text-slate-400 text-xs ml-2">
+                      [2020-present]</span
+                    >
+                  </p>
+                  <div>
+                    <ul
+                      class="text-sm text-slate-600 md:list-disc md:ml-4 mt-2 text-left"
+                    >
+                      <li class="my-2">
+                        Work on diverse projects under sales pillar, ranging
+                        from SaaS products to full stack web applications
+                      </li>
+                      <li class="my-2">
+                        Work with tools like Django, Angular, Elasticsearch as
+                        well as platforms like Dynamics 365 CRM & Model Driven
+                        Powerapps
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
